@@ -45,7 +45,7 @@ function loses(user, computer) {
   computerScore_span.innerHTML = computerScore;
   const userName = ' (sen)'.fontsize(3).sup();
   const compName = ' (ezequiel)'.fontsize(3).sup();
-  result_div.innerHTML = `<p>${convertCase(computer)}${compName} sikti ${convertCase(user)}${userName}. Sikildin!</p>`;
+  result_div.innerHTML = `<p>${convertCase(computer)}${compName} Kazandı ${convertCase(user)}${userName}. Kaybettin!</p>`;
   const roundStatus = document.getElementById(user);
   roundStatus.classList.add('losingStyles');
   setTimeout(() => roundStatus.classList.remove('losingStyles'), 300);
@@ -55,7 +55,7 @@ function loses(user, computer) {
 function draw(user, computer) {
 	const userName = ' (sen)'.fontsize(3).sup();
   const compName = ' (ezequiel)'.fontsize(3).sup();
-  result_div.innerHTML = `<p>Berabere! siken yok ${convertCase(user)}</p>`;
+  result_div.innerHTML = `<p>Berabere! ${convertCase(user)}</p>`;
   // "It was a draw! You both chose " + user + " " + computer; // old js
   const roundStatus = document.getElementById(user);
   roundStatus.classList.add('drawStyles');
